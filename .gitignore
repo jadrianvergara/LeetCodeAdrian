@@ -1,11 +1,12 @@
 
 # Ignore bin and settings directories
 bin/
-settings/
+.settings
 
 # Gradle files
 .gradle/
-build/
+build/   git rm -r --cached settings/
+
 
 # Maven files
 target/
