@@ -1,0 +1,32 @@
+
+# Ignore bin and settings directories
+bin/
+settings/
+
+# Gradle files
+.gradle/
+build/
+
+# Maven files
+target/
+
+# Java files
+*.class
+*.jar
+*.war
+*.ear
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Groovy files
+*.groovy
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
