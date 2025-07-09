@@ -34,6 +34,24 @@ public class Palindrome {
     		return false;
     	}
     	
+    	// type conversions
+    	String stringVal = String.valueOf(x);
+    	char[] numAsArray = stringVal.toCharArray();
+    	
+    	// even
+    	if (numAsArray.length % 2 == 0) {
+    		int endpoint = (numAsArray.length / 2) - 1;
+    		// have one array that goes to that point
+    		
+    	}
+    	
+    	// odd
+    	if (numAsArray.length % 2 == 1) {
+    		int endpoint = (numAsArray.length -1 ) / 2;
+    		// this needs to be in both arrays compared, the last value in array 1, first value in array 2
+    		
+    	}
+    	
     	
     	
     	return true;
