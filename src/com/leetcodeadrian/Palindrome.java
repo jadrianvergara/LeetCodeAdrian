@@ -29,32 +29,21 @@ public class Palindrome {
     
     // doing it with character array
     private static boolean isPalindromeSimple(int x) {
-    	
-    	if (x < 0) { 
-    		return false;
-    	}
-    	
-    	// type conversions
-    	String stringVal = String.valueOf(x);
-    	char[] numAsArray = stringVal.toCharArray();
-    	
-    	// even
-    	if (numAsArray.length % 2 == 0) {
-    		int endpoint = (numAsArray.length / 2) - 1;
-    		// have one array that goes to that point
-    		
-    	}
-    	
-    	// odd
-    	if (numAsArray.length % 2 == 1) {
-    		int endpoint = (numAsArray.length -1 ) / 2;
-    		// this needs to be in both arrays compared, the last value in array 1, first value in array 2
-    		
-    	}
-    	
-    	
-    	
-    	return true;
+        if (x < 0) {
+            return false;
+        }
+        // moving left and right pointers inwards
+        char[] numAsArray = String.valueOf(x).toCharArray();
+        int left = 0;
+        int right = numAsArray.length - 1;
+        while (left < right) {
+            if (numAsArray[left] != numAsArray[right]) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
     }
     
     private static boolean isPalindromeNoConvert(int x) {
