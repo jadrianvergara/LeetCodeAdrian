@@ -12,7 +12,9 @@ public class Palindrome {
 		// x = -121 = false (because reversed is 121-)
 		// x = 10 = false
 		// Bonus: Solve w/o converting to string
-		
+
+        Boolean solution = Palindrome.isPalindrome(121);
+        System.out.println(Boolean.toString(solution));
 	}
 	
     
